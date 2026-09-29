@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>Покатушки</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&family=PT+Sans:wght@400;700&family=Tektur:wght@600;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-scene="title">
+<div id="game">
+  <canvas id="cv" width="1280" height="720"></canvas>
+
+  <!-- ===== заставка ===== -->
+  <div id="title" class="overlay">
+    <div class="tcard">
+      <div class="mk big">ПОКАТУШКИ</div>
+      <div class="tsub">Покатушка службы связи · Лёха, Денис и Сергей едут на объект</div>
+      <button id="btnStart" class="spin-btn">ПОЕХАЛИ!</button>
+      <div class="rec" id="recTitle"></div>
+      <div class="keys">
+        <div><b>→ / D</b> газ</div><div><b>← / A</b> тормоз</div><div><b>Пробел / ↑</b> прыжок</div>
+        <div><b>R</b> чинить (стоя)</div><div><b>H</b> сигнал</div><div><b>B</b> под бугор</div><div><b>Esc</b> пауза</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== планёрка и барабан ===== -->
+  <div id="briefing" class="overlay hidden">
+    <div class="spot l"></div><div class="spot r"></div>
+    <div class="btitle">ПЛАНЁРКА · <span id="planLabel">РЕЙС №1</span></div>
+    <div class="bstage">
+      <div class="slot" id="bossSlot">
+        <div class="bubble" id="bossBubble"></div>
+<!--BOSS-->
+      </div>
+      <div class="wheel-wrap" id="wheelWrap">
+        <div class="wheel-box"><div class="badge" id="badge"></div>
+<!--WHEEL-->
+        </div>
+        <button class="spin-btn" id="spinBtn">КРУТИТЬ БАРАБАН!</button>
+        <div class="plaque"><div class="task" id="planText"></div><div class="psub" id="planSub"></div></div>
+        <div class="bstats" id="bStats"></div>
+      </div>
+      <div class="slot" id="crewSlot">
+        <div class="bubble" id="lexaBubble"></div>
+        <div class="bubble crewb" id="crewBubble"></div>
+        <div class="trio">
+          <div class="lxslot" id="slotD"><!--DEN--></div>
+          <div class="lxslot" id="lexaSlot"><!--LEXA--></div>
+          <div class="lxslot" id="slotS"><!--SER--></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== HUD-кнопки ===== -->
+  <div id="hud" class="hidden"><button id="btnPause" title="Пауза">⏸</button></div>
+  <button id="btnMute" title="Звук">🔊</button>
+  <div id="pause" class="overlay hidden"><div class="pcard">ПАУЗА<small>нажми Esc или тапни</small></div></div>
+
+  <!-- ===== ремонт ===== -->
+  <div id="repair" class="overlay hidden" data-mode="seq">
+    <div class="rcard">
+      <div id="rTitle" class="rtitle"></div>
+      <div id="rHint" class="rhint"></div>
+      <div id="rCrew" class="rcrew"></div>
+      <div id="rSeq" class="rseq"></div>
+      <div class="rtimer"><i id="rBar"></i></div>
+      <div id="rPad" class="rpad">
+        <button data-k="left">⬅</button><button data-k="up">⬆</button><button data-k="down">⬇</button><button data-k="right">➡</button>
+      </div>
+      <button id="rMash" class="spin-btn">ЖМИ! (пробел)</button>
+      <button id="rCancel" class="rcancel">Не буду чинить (Esc)</button>
+    </div>
+  </div>
+
+  <!-- ===== итоги ===== -->
+  <div id="results" class="overlay hidden">
+    <div class="rescard">
+      <div id="resTitle" class="mk sm"></div>
+      <div id="resScore" class="ressc"></div>
+      <div class="resl">очков</div>
+      <div id="resRank" class="resrank"></div>
+      <div id="resStats" class="resstats"></div>
+      <div id="resRec"></div>
+      <div id="resBoss" class="resboss"></div>
+      <button id="btnAgain" class="spin-btn">ЕЩЁ РЕЙС</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== кнопки для телефона ===== -->
+<div id="touch">
+  <div class="tl"><button data-key="left">◀</button><button data-key="right">▶</button></div>
+  <div class="tr"><button data-key="repair" id="touchRepair" class="hidden">🔧</button><button data-key="bugor" id="touchBugor" class="hidden">🔥</button><button data-key="honk">📯</button><button data-key="jump">⤒</button></div>
+</div>
+<div id="rotate">Поверни телефон 📱↻</div>
+
+<script src="data.js"></script>
+<script src="audio.js"></script>
+<script src="art.js"></script>
+<script src="game.js"></script>
+</body>
+</html>

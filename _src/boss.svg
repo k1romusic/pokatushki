@@ -1,0 +1,82 @@
+    <svg id="boss" class="person" viewBox="0 0 220 470" aria-label="Начальник службы связи">
+      <ellipse cx="110" cy="458" rx="72" ry="10" fill="rgba(0,0,0,.4)"/>
+      <g class="body">
+        <!-- ноги -->
+        <path d="M83 296 L79 446 L107 446 L110 304 Z" fill="#1d3f7a"/>
+        <path d="M110 304 L113 446 L141 446 L137 296 Z" fill="#1d3f7a"/>
+        <path d="M94 310 L93 444 M126 310 L127 444" stroke="#17336a" stroke-width="2"/>
+        <path d="M70 444 h38 v12 h-42 q-1 -9 4 -12z" fill="#111"/>
+        <path d="M112 444 h38 q5 3 4 12 h-42z" fill="#111"/>
+        <!-- пиджак -->
+        <path d="M64 158 Q62 144 86 138 L134 138 Q158 144 156 158 L152 310 L68 310 Z" fill="#2352a3"/>
+        <path d="M97 138 L110 188 L123 138 Z" fill="#fff"/>
+        <path d="M105 141 h10 l-2 7 h-6z" fill="#0b2f6b"/>
+        <path d="M107 147 L113 147 L117 196 L110 207 L103 196 Z" fill="#0b2f6b"/>
+        <path d="M106 158 L114 164 M105 174 L116 182 M104 190 L116 198" stroke="#3f6fc4" stroke-width="1.6"/>
+        <path d="M97 138 L110 188 L99 218 L84 152 Z" fill="#1a3f82"/>
+        <path d="M123 138 L110 188 L121 218 L136 152 Z" fill="#1a3f82"/>
+        <path d="M110 218 L110 310" stroke="#1a3f82" stroke-width="2"/>
+        <circle cx="113" cy="236" r="3" fill="#10275a"/><circle cx="113" cy="262" r="3" fill="#10275a"/>
+        <path d="M128 176 h18" stroke="#1a3f82" stroke-width="2"/>
+        <g transform="translate(137 165)">
+          <path d="M-1 1 q-10 -2 -10 3 q0 8 7 8 q4 0 4 -6z M1 1 q10 -2 10 3 q0 8 -7 8 q-4 0 -4 -6z" fill="#2b3440" stroke="#d4af37" stroke-width="1"/>
+          <path d="M-8 3 l3 -1 M4 3 l3 -1" stroke="#fff" stroke-width="1" opacity=".6"/>
+        </g>
+        <circle cx="92" cy="165" r="3.2" fill="#0a7fd6" stroke="#fff" stroke-width="1"/>
+        <!-- левая рука с микрофоном -->
+        <g class="mic">
+          <polyline points="72,156 55,232 84,202" fill="none" stroke="#2352a3" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+          <g transform="rotate(-38 86 194)">
+            <rect x="81" y="152" width="9" height="46" rx="4" fill="#1b1b1b"/>
+            <rect x="79" y="158" width="13" height="5" rx="2" fill="#555"/>
+          </g>
+          <circle cx="100" cy="153" r="10" fill="#9aa3ad"/>
+          <path d="M92 148 h16 M91 153 h18 M92 158 h16" stroke="#6d7680" stroke-width="1.4"/>
+          <rect x="74" y="203" width="10" height="6" rx="2" fill="#fff" transform="rotate(-40 79 206)"/>
+          <circle cx="84" cy="198" r="10" fill="#eec39a"/>
+        </g>
+        <!-- бейдж на ленте -->
+        <path d="M101 142 L103 222 M119 142 L117 222" stroke="#0a7fd6" stroke-width="2.4"/>
+        <rect x="80" y="220" width="60" height="38" rx="4" fill="#fff" stroke="#0a7fd6" stroke-width="1.6"/>
+        <rect x="80" y="220" width="60" height="9" rx="3" fill="#0a7fd6"/>
+        <text x="110" y="227" font-size="5.5" text-anchor="middle" fill="#fff" font-weight="700">ПРОПУСК</text>
+        <text x="110" y="239" font-size="7" text-anchor="middle" fill="#0b2f6b" font-weight="700">НАЧАЛЬНИК</text>
+        <text x="110" y="248" font-size="6.2" text-anchor="middle" fill="#0b2f6b" font-weight="700">СЛУЖБЫ</text>
+        <text x="110" y="256" font-size="6.2" text-anchor="middle" fill="#0b2f6b" font-weight="700">СВЯЗИ</text>
+        <!-- правая рука (указывает на барабан) -->
+        <g class="arm-point">
+          <polyline points="152,152 170,212 176,266" fill="none" stroke="#2352a3" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="169" y="266" width="15" height="6" rx="2" fill="#fff"/>
+          <circle cx="177" cy="278" r="10" fill="#eec39a"/>
+          <rect x="173" y="282" width="6" height="16" rx="3" fill="#eec39a"/>
+        </g>
+        <!-- голова -->
+        <g class="head">
+          <rect x="100" y="116" width="20" height="24" fill="#dcae84"/>
+          <ellipse cx="83" cy="94" rx="7" ry="11" fill="#e6b88e"/>
+          <ellipse cx="137" cy="94" rx="7" ry="11" fill="#e6b88e"/>
+          <ellipse cx="110" cy="90" rx="27" ry="34" fill="#eec39a"/>
+          <!-- седые зачёсанные назад волосы -->
+          <path d="M83 86 Q78 51 110 49 Q142 50 138 84 Q134 64 122 61 Q108 58 97 62 Q87 67 83 86Z" fill="#9c8b78"/>
+          <path d="M92 66 Q108 58 128 64 M94 72 Q110 64 130 70" stroke="#b9a996" stroke-width="1.5" fill="none"/>
+          <path d="M84 84 q-3 10 0 16 M136 84 q3 10 0 16" stroke="#8f7e6c" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <!-- морщины на лбу -->
+          <path d="M99 76 q11 -3 22 0" stroke="#dcae84" stroke-width="1" fill="none"/>
+          <!-- брови и прищур -->
+          <path d="M93 86 q7 -4 13 -1 M114 85 q7 -3 13 1" stroke="#6f5f50" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M94 93 q6 -5 12 0" stroke="#2d2d2d" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <path d="M114 93 q6 -5 12 0" stroke="#2d2d2d" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <circle cx="100" cy="92" r="1.6" fill="#3a6ea8"/><circle cx="120" cy="92" r="1.6" fill="#3a6ea8"/>
+          <!-- усталость: мешки и «гусиные лапки» -->
+          <path d="M94 98 q6 3 12 0 M114 98 q6 3 12 0" stroke="#c99a8c" stroke-width="1.2" fill="none" opacity=".5"/>
+          <path d="M89 92 l-4 -1 M131 92 l4 -1" stroke="#d29f76" stroke-width="1"/>
+          <path d="M110 92 q-4 10 -1 14 q3 2 5 -1" stroke="#c98f64" stroke-width="2" fill="none"/>
+          <path d="M96 106 q-3 5 -1 10 M124 106 q3 5 1 10" stroke="#d29f76" stroke-width="1.2" fill="none"/>
+          <!-- широкая улыбка -->
+          <g class="mouth">
+            <path d="M97 112 q13 13 26 0 q-13 4 -26 0z" fill="#7a1f1f"/>
+            <path d="M99 112.6 q11 3.2 22 0 v2.6 q-11 3 -22 0z" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+    </svg>

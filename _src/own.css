@@ -1,0 +1,129 @@
+:root{--gold:#ffd24a;--gold2:#c8932a;--blue:#0a7fd6;--panel:rgba(8,14,40,.78)}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:#0b0f1e;overflow:hidden;font-family:"PT Sans",system-ui,sans-serif;color:#fff;-webkit-user-select:none;user-select:none;touch-action:manipulation}
+#game{position:absolute;left:50%;top:50%;width:1280px;height:720px;transform-origin:center;overflow:hidden;background:#000}
+#cv{position:absolute;left:0;top:0;width:1280px;height:720px;display:block}
+.overlay{position:absolute;inset:0;z-index:5}
+.hidden{display:none!important}
+.mk.big{font-size:120px}.mk.sm{font-size:56px}
+.mk{text-align:center;line-height:1}
+
+/* ---- заставка ---- */
+#title{background:linear-gradient(180deg,rgba(10,20,60,.55),rgba(10,20,60,.15) 55%,rgba(10,20,60,.6))}
+.tcard{position:absolute;left:0;right:0;top:0;bottom:0;padding-top:40px;text-align:center}
+.tsub{margin-top:10px;font-size:20px;color:#e9f0ff;text-shadow:0 2px 6px #000}
+.tcard .spin-btn{margin-top:22px}
+.rec{margin-top:14px;font-family:"Russo One",sans-serif;color:var(--gold);font-size:20px;text-shadow:0 2px 6px #000}
+.keys{position:absolute;left:50%;transform:translateX(-50%);bottom:16px;display:flex;flex-wrap:wrap;gap:8px 16px;justify-content:center;width:900px;font-size:17px}
+.keys div{background:rgba(0,0,0,.5);padding:6px 12px;border-radius:10px}
+.keys b{color:var(--gold);font-family:"Russo One",sans-serif;font-weight:400}
+.spin-btn{font-family:"Russo One",sans-serif;font-size:28px;color:#3a1c00;background:linear-gradient(180deg,#fff2a8,#ffc928 50%,#e39a0c);border:0;border-radius:60px;padding:14px 44px;cursor:pointer;letter-spacing:1px;box-shadow:0 6px 0 #8a4d00,0 10px 26px rgba(255,190,40,.45);transition:transform .08s,box-shadow .08s}
+.spin-btn:hover{filter:brightness(1.06)}
+.spin-btn:active{transform:translateY(4px);box-shadow:0 2px 0 #8a4d00}
+.spin-btn:disabled{filter:grayscale(.6) brightness(.8);cursor:wait}
+
+/* ---- планёрка ---- */
+#briefing{background:radial-gradient(ellipse at 50% 0%,#2b3ea8 0%,#0b1640 50%,#1a0b3d 100%)}
+.spot{position:absolute;top:-40px;width:300px;height:720px;background:linear-gradient(180deg,rgba(255,255,220,.2),rgba(255,255,220,0) 80%);clip-path:polygon(45% 0,55% 0,100% 100%,0 100%);pointer-events:none}
+.spot.l{left:80px;transform:rotate(-14deg);transform-origin:50% 0}.spot.r{right:80px;transform:rotate(14deg);transform-origin:50% 0}
+.btitle{position:absolute;top:14px;left:0;right:0;text-align:center;font-family:"Russo One",sans-serif;font-size:22px;letter-spacing:3px;color:var(--gold);text-shadow:0 2px 6px #000}
+.bstage{position:absolute;left:10px;right:10px;top:60px;bottom:10px;display:grid;grid-template-columns:270px 380px 590px;gap:10px;align-items:end;justify-content:center}
+.slot{position:relative;display:flex;justify-content:center;align-items:flex-end}
+#boss{height:520px;width:auto;overflow:visible}
+.wheel-wrap{display:flex;flex-direction:column;align-items:center;position:relative}
+.wheel-box{position:relative;width:380px}
+#wheel{width:100%;height:auto;filter:drop-shadow(0 18px 30px rgba(0,0,0,.55))}
+.bulb{fill:#ffe9a0;animation:bulb 1.2s infinite}.bulb.odd{animation-delay:-.6s}
+.spinning .bulb{animation-duration:.22s}
+@keyframes bulb{0%,49%{fill:#fff6c8;filter:drop-shadow(0 0 4px #ffd24a)}50%,100%{fill:#8a6a1c;filter:none}}
+#pointer{transform-origin:0 -196px;transform-box:view-box}
+#pointer.flick{animation:flick .12s ease-out}
+@keyframes flick{0%{transform:rotate(0)}40%{transform:rotate(-16deg)}100%{transform:rotate(0)}}
+#sectors path{transition:opacity .35s,filter .35s}
+#sectors.picked path{opacity:.35;filter:saturate(.4)}
+#sectors.picked path.win{opacity:1;filter:none;animation:winGlow .7s ease-in-out infinite alternate}
+#sectors.picked g.lab{opacity:.35}#sectors.picked g.lab.win{opacity:1}
+@keyframes winGlow{from{stroke:#fff;stroke-width:3}to{stroke:#fff6a8;stroke-width:9}}
+.badge{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) scale(0);opacity:0;pointer-events:none;font-family:"Russo One",sans-serif;font-size:30px;color:#fff;white-space:nowrap;padding:8px 20px;border-radius:16px;border:4px solid var(--gold);background:var(--sec,#0e2a78);box-shadow:0 10px 30px rgba(0,0,0,.55);transition:transform .45s cubic-bezier(.3,1.7,.5,1),opacity .2s;z-index:3}
+.badge.show{transform:translate(-50%,-50%) scale(1);opacity:1}
+.wheel-wrap .spin-btn{margin-top:10px;font-size:24px;padding:10px 34px}
+.plaque{margin-top:10px;width:100%;background:linear-gradient(180deg,#0e2a78,#081a4d);border:4px solid var(--gold);border-radius:16px;padding:8px 14px;text-align:center;min-height:82px;box-shadow:0 0 0 4px #5a3a06}
+.plaque .task{font-size:21px;font-weight:700}
+.plaque .psub{font-size:15px;color:#cfe3ff;margin-top:4px}
+.bstats{margin-top:6px;font-size:14px;opacity:.85}
+#crewSlot{flex-direction:column;align-items:center;justify-content:flex-end;height:100%}
+.trio{display:flex;align-items:flex-end;justify-content:center;width:100%;position:relative}
+.trio .lxslot{position:relative;transform-origin:50% 100%}
+.trio svg{height:auto;overflow:visible;display:block}
+#lexaSlot{z-index:3}#lexaSlot svg{height:400px;width:auto}
+#slotD{z-index:2;margin-right:-6px;transform:scale(1.6,1.1)}#slotD svg{height:400px;width:auto}
+#slotS{z-index:2;margin-left:-20px;transform:scale(1.04,1.07)}#slotS svg{height:400px;width:auto}
+.names{display:flex;justify-content:space-around;width:100%;margin-top:4px;font-family:"Russo One",sans-serif;font-size:14px;color:var(--gold)}
+.bubble{position:absolute;top:0;left:50%;transform:translate(-50%,-10px) scale(.6);opacity:0;background:#fff;color:#14203a;border-radius:16px;padding:10px 14px;font-weight:700;font-size:17px;line-height:1.25;width:max-content;max-width:280px;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,.35);transition:.25s cubic-bezier(.3,1.6,.5,1);z-index:6;pointer-events:none}
+.bubble::after{content:"";position:absolute;bottom:-9px;left:50%;margin-left:-9px;border:9px solid transparent;border-bottom:0;border-top-color:#fff}
+.bubble.show{opacity:1;transform:translate(-50%,-10px) scale(1)}
+#bossBubble{top:-4px}
+#lexaBubble{top:20px;left:34%}
+#crewBubble{top:110px;left:70%}
+#boss{position:relative;z-index:1}
+#bossSlot{z-index:4}
+#boss.pointing .arm-point{transform:rotate(-78deg)}
+
+/* ---- HUD, кнопки ---- */
+#hud{position:absolute;inset:0;pointer-events:none;z-index:4}
+#hud button,#btnMute{pointer-events:auto}
+#btnPause{position:absolute;right:16px;bottom:14px;width:52px;height:52px;border-radius:50%;border:3px solid #1b1b1b;background:rgba(255,255,255,.85);font-size:22px;cursor:pointer}
+#btnMute{position:absolute;right:16px;top:70px;z-index:20;width:44px;height:44px;border-radius:50%;border:3px solid #1b1b1b;background:rgba(255,255,255,.85);font-size:20px;cursor:pointer}
+#pause{background:rgba(0,0,20,.6);display:flex;align-items:center;justify-content:center;z-index:8}
+.pcard{font-family:"Russo One",sans-serif;font-size:80px;color:var(--gold);text-align:center;text-shadow:0 4px 0 #4a1c00}
+.pcard small{display:block;font-size:22px;color:#fff;margin-top:6px}
+
+/* ---- ремонт ---- */
+#repair{background:rgba(5,10,30,.55);display:flex;align-items:center;justify-content:center;z-index:7}
+.rcard{width:640px;padding:22px 26px;text-align:center;border-radius:22px;background:linear-gradient(180deg,#0e2a78,#081a4d);border:5px solid var(--gold);box-shadow:0 0 60px rgba(255,210,74,.3)}
+.rtitle{font-family:"Russo One",sans-serif;font-size:34px;color:var(--gold)}
+.rhint{font-size:19px;margin:6px 0}
+.rcrew{min-height:26px;color:#ffb3a0;font-weight:700;font-size:18px}
+.rseq{font-size:58px;margin:10px 0;min-height:76px;letter-spacing:10px}
+.rseq span{opacity:.35;display:inline-block;transition:.15s}
+.rseq span.cur{opacity:1;transform:scale(1.25);color:var(--gold)}
+.rseq span.done{opacity:1;color:#5be07f}
+.rtimer{height:14px;border-radius:7px;background:rgba(255,255,255,.15);overflow:hidden;margin-bottom:12px}
+.rtimer i{display:block;height:100%;width:100%;background:linear-gradient(90deg,#ff4b3e,#ffd24a,#3ad16a)}
+.rpad{display:flex;gap:10px;justify-content:center;margin-bottom:8px}
+.rpad button{width:84px;height:84px;font-size:38px;border-radius:18px;border:3px solid #1b1b1b;background:#e9eefc;cursor:pointer}
+.rpad button:active{transform:translateY(3px)}
+#repair[data-mode=mash] .rpad{display:none}
+#repair:not([data-mode=mash]) #rMash{display:none}
+#repair[data-mode=push] .rpad button[data-k=up],#repair[data-mode=push] .rpad button[data-k=down]{display:none}
+#rMash{font-size:34px;padding:22px 50px;margin:8px 0}
+.rcancel{margin-top:6px;background:none;border:0;color:#9fb3e8;font-size:15px;cursor:pointer;text-decoration:underline}
+#repair.shake .rcard{animation:shk .3s}
+@keyframes shk{25%{transform:translateX(-10px)}75%{transform:translateX(10px)}}
+
+/* ---- итоги ---- */
+#results{background:rgba(5,5,20,.72);display:flex;align-items:center;justify-content:center;z-index:9}
+.rescard{width:680px;text-align:center;padding:24px;border-radius:22px;background:linear-gradient(180deg,#0e2a78,#081a4d);border:5px solid var(--gold);box-shadow:0 0 70px rgba(255,210,74,.35)}
+.ressc{font-family:"Russo One",sans-serif;font-size:76px;color:#fff;line-height:1.1;margin-top:8px;text-shadow:0 4px 0 #4a1c00}
+.resl{color:#cfe3ff;letter-spacing:4px;text-transform:uppercase;font-size:14px}
+.resrank{font-family:"Russo One",sans-serif;font-size:26px;color:var(--gold);margin:8px 0}
+.resstats{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:10px 0}
+.resstats div{background:rgba(255,255,255,.1);border-radius:12px;padding:8px 14px;min-width:110px}
+.resstats b{display:block;font-family:"Russo One",sans-serif;font-size:28px}.resstats span{font-size:13px;opacity:.85}
+#resRec{font-family:"Russo One",sans-serif;font-size:20px;color:var(--gold);margin:8px 0}
+#resRec.new{font-size:26px;animation:pulse .9s ease-in-out infinite}
+.resboss{font-style:italic;color:#e9f0ff;margin:8px 0 14px;font-size:18px}
+@keyframes pulse{50%{transform:scale(1.06)}}
+
+/* ---- телефон ---- */
+#touch,#rotate{display:none}
+@media (hover:none){
+  #touch{display:block;position:fixed;inset:0;pointer-events:none;z-index:30}
+  #touch button{pointer-events:auto;width:76px;height:76px;border-radius:50%;border:3px solid rgba(0,0,0,.7);background:rgba(255,255,255,.55);font-size:30px;margin:6px;touch-action:none}
+  .tl{position:absolute;left:8px;bottom:8px;display:flex}.tr{position:absolute;right:8px;bottom:8px;display:flex;flex-wrap:wrap;justify-content:flex-end;max-width:180px}
+  body:not([data-scene=drive]) #touch{display:none}
+}
+@media (hover:none) and (orientation:portrait){
+  #rotate{display:flex;position:fixed;inset:0;z-index:99;background:#0b0f1e;align-items:center;justify-content:center;font-family:"Russo One",sans-serif;font-size:28px;color:var(--gold)}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important}}

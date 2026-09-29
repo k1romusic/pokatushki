@@ -1,0 +1,13 @@
+  h1,.mk{
+    font-family:"Tektur","Russo One",sans-serif;font-weight:900;margin:0;text-transform:uppercase;
+    font-size:clamp(26px,min(5.4vw,6.6vh),60px);letter-spacing:3px;line-height:1.05;
+    background:linear-gradient(180deg,#fffbe8 0%,#ffe08a 20%,#f0a92c 44%,#7a3606 50%,#c96d12 56%,#ffc54a 78%,#fff3c4 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    -webkit-text-stroke:1.4px #2b1000;
+    filter:drop-shadow(0 2px 0 #4a1c00) drop-shadow(0 4px 0 #1c0800) drop-shadow(0 0 12px rgba(255,90,0,.7)) drop-shadow(0 0 28px rgba(255,40,0,.35));
+    animation:flame 2.6s ease-in-out infinite alternate;
+  }
+  @keyframes flame{
+    from{filter:drop-shadow(0 2px 0 #4a1c00) drop-shadow(0 4px 0 #1c0800) drop-shadow(0 0 10px rgba(255,90,0,.6)) drop-shadow(0 0 24px rgba(255,40,0,.3))}
+    to{filter:drop-shadow(0 2px 0 #4a1c00) drop-shadow(0 4px 0 #1c0800) drop-shadow(0 0 16px rgba(255,120,0,.85)) drop-shadow(0 0 36px rgba(255,40,0,.45))}
+  }

@@ -1,0 +1,167 @@
+    <svg id="lexa" class="person" viewBox="0 0 240 420" aria-label="Электромонтёр Лёха">
+      <ellipse cx="122" cy="404" rx="74" ry="10" fill="rgba(0,0,0,.4)"/>
+      <g class="collapse"><g class="walker">
+        <!-- ноги -->
+        <g class="leg-l">
+          <path d="M94 270 L92 386 L118 386 L120 270 Z" fill="#173b73"/>
+          <rect x="92" y="336" width="27" height="8" fill="#d6dde6"/>
+          <rect x="92" y="338.5" width="27" height="3" fill="#f5f7fa"/>
+          <ellipse class="lv2" cx="104" cy="358" rx="9" ry="5" fill="#6b5a3e" opacity=".6"/>
+          <path class="lv3" d="M97 298 l5 -5 l4 5 l5 -5 l4 6 l-1 8 l-6 4 l-6 -2 l-5 -5z" fill="#eab98e" stroke="#0e2850" stroke-width="1.5"/>
+          <g class="lv4">
+            <path d="M92 360 l4 7 l4 -6 l5 8 l5 -7 l4 7 l4 -6 v24 h-26z" fill="#eab98e"/>
+            <path d="M92 360 l4 7 l4 -6 l5 8 l5 -7 l4 7 l4 -6" fill="none" stroke="#0e2850" stroke-width="1.5"/>
+            <g fill="#0e2850"><circle cx="98" cy="322" r="1.8"/><circle cx="103" cy="319" r="1.8"/><circle cx="108" cy="318" r="1.8"/><circle cx="113" cy="320" r="1.8"/><circle cx="99" cy="330" r="1.8"/><circle cx="104" cy="332" r="1.8"/><circle cx="109" cy="332" r="1.8"/><circle cx="114" cy="329" r="1.8"/></g>
+          </g>
+          <path d="M84 384 q0 -10 12 -10 h24 v18 h-38 q-4 0 2 -8z" fill="#1a1a1a"/>
+        </g>
+        <g class="leg-r">
+          <path d="M122 270 L124 386 L150 386 L148 270 Z" fill="#173b73"/>
+          <rect x="123" y="336" width="27" height="8" fill="#d6dde6"/>
+          <rect x="123" y="338.5" width="27" height="3" fill="#f5f7fa"/>
+          <ellipse class="lv2" cx="138" cy="300" rx="7" ry="4" fill="#6b5a3e" opacity=".55"/>
+          <g class="lv3" transform="rotate(8 136 305)">
+            <rect x="128" y="298" width="17" height="15" fill="#2f86d8"/>
+            <rect x="129.5" y="299.5" width="14" height="12" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="2 2"/>
+          </g>
+          <path d="M120 384 q0 -10 12 -10 h24 v18 h-38 q-4 0 2 -8z" fill="#1a1a1a"/>
+          <path class="lv4 sole" d="M117 391 h39 v4 h-37 q-3 0 -2 -4z" fill="#555"/>
+        </g>
+
+        <g class="upper">
+          <!-- левая рука: плоскогубцы или предмет сектора -->
+          <g>
+            <polyline points="80,162 66,226 70,284" fill="none" stroke="#2166b3" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M58 250 l23 2 l-1 9 l-23 -2z" fill="#d6dde6"/>
+            <path class="lv3" d="M57 222 l4 -3 l3 4 l4 -4 l3 4 l4 -2 l-1 8 l-4 4 l-6 -2 l-6 1z" fill="#eab98e" stroke="#123a6b" stroke-width="1.2"/>
+            <circle cx="70" cy="292" r="10" fill="#eab98e"/>
+            <g class="lv4">
+              <rect x="60" y="285" width="20" height="5" rx="1" fill="#fff" transform="rotate(-12 70 287)"/>
+              <rect x="60" y="292" width="20" height="5" rx="1" fill="#eee" transform="rotate(10 70 294)"/>
+              <circle cx="74" cy="289" r="1.6" fill="#d33"/>
+            </g>
+            <g class="pliers">
+              <path d="M66 298 l-8 34 M72 298 l4 34" stroke="#c8202a" stroke-width="5" stroke-linecap="round"/>
+              <path d="M58 330 l-3 14 M76 330 l2 14" stroke="#8f99a3" stroke-width="4" stroke-linecap="round"/>
+            </g>
+            <text class="prop" id="lexaProp" x="70" y="332" font-size="38" text-anchor="middle"></text>
+          </g>
+          <!-- спецовка -->
+          <path d="M78 164 Q76 150 98 146 L144 146 Q166 150 164 164 L156 280 L86 280 Z" fill="#2166b3"/>
+          <path d="M104 146 L120 168 L136 146 Z" fill="#153f73"/>
+          <path d="M120 168 L120 278" stroke="#153f73" stroke-width="2.5"/>
+          <rect x="84" y="222" width="76" height="9" fill="#d6dde6"/>
+          <rect x="84" y="225" width="76" height="3" fill="#f5f7fa"/>
+          <rect x="85" y="240" width="74" height="9" fill="#d6dde6"/>
+          <rect x="85" y="243" width="74" height="3" fill="#f5f7fa"/>
+          <rect x="84" y="262" width="74" height="16" fill="#1a4f94"/>
+          <rect x="112" y="264" width="16" height="12" rx="2" fill="#bfbfbf"/>
+          <rect x="126" y="176" width="30" height="16" rx="3" fill="#fff"/>
+          <text x="141" y="183" font-size="5.6" text-anchor="middle" fill="#0a7fd6" font-weight="700">ГАЗПРОМ</text>
+          <text x="141" y="189.5" font-size="4" text-anchor="middle" fill="#0a7fd6">ТРАНСГАЗ МСК</text>
+          <rect x="88" y="178" width="22" height="8" rx="2" fill="#153f73"/>
+          <text x="99" y="184" font-size="5" text-anchor="middle" fill="#fff">ЛЁХА</text>
+          <!-- грязь, заплатки, дыры -->
+          <g class="lv2" fill="#6b5a3e" opacity=".5"><ellipse cx="100" cy="258" rx="8" ry="4"/><ellipse cx="148" cy="208" rx="6" ry="4"/></g>
+          <g class="lv3" transform="rotate(-6 144 256)">
+            <rect x="136" y="250" width="16" height="13" fill="#3a8ee0"/>
+            <rect x="137.5" y="251.5" width="13" height="10" fill="none" stroke="#fff" stroke-dasharray="2 2"/>
+          </g>
+          <g class="lv4">
+            <path d="M104 200 l5 -6 l3 4 l5 -3 l2 6 l5 2 l-3 5 l3 5 l-6 1 l-3 4 l-5 -3 l-5 1 l1 -6 l-4 -4z" fill="#1b1b1b"/>
+            <path d="M144 204 q8 -4 10 4 q2 8 -6 8 q-8 2 -7 -5z" fill="#6b3f1d" opacity=".75"/>
+          </g>
+          <!-- бухта кабеля -->
+          <g fill="none" stroke="#f08a1c" stroke-width="4">
+            <ellipse cx="92" cy="180" rx="20" ry="30" transform="rotate(-24 92 180)"/>
+            <ellipse cx="94" cy="182" rx="15" ry="25" transform="rotate(-24 94 182)" stroke="#d9700c"/>
+            <ellipse cx="90" cy="178" rx="24" ry="34" transform="rotate(-24 90 178)" stroke="#ff9f3a" stroke-width="3"/>
+            <path class="lv4" d="M70 160 q20 10 5 25 q-15 15 20 20 q25 5 5 25" stroke="#ff9f3a" stroke-width="3"/>
+          </g>
+          <!-- правая рука: кружка кофе -->
+          <g class="arm-mug">
+            <polyline points="160,162 178,220 158,236" fill="none" stroke="#2166b3" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M166 206 l22 -4 l2 9 l-22 4z" fill="#d6dde6"/>
+            <rect x="140" y="222" width="22" height="24" rx="3" fill="#f4f4f4" stroke="#cfcfcf"/>
+            <ellipse cx="151" cy="223" rx="10" ry="2.4" fill="#4a2a12"/>
+            <path d="M162 227 q9 0 9 8 q0 7 -9 7" fill="none" stroke="#f4f4f4" stroke-width="4"/>
+            <text x="151" y="238" font-size="6" text-anchor="middle" fill="#6b3f1d" font-weight="700">КОФЕ</text>
+            <circle cx="154" cy="238" r="9" fill="#eab98e"/>
+            <g class="steam" stroke="#e8eef8" stroke-width="2" fill="none" stroke-linecap="round">
+              <path d="M146 216 q-4 -5 0 -10 q4 -5 0 -10"/>
+              <path d="M154 216 q-4 -5 0 -10 q4 -5 0 -10"/>
+            </g>
+          </g>
+
+          <!-- голова -->
+          <g class="head">
+            <rect x="110" y="128" width="20" height="22" fill="#d9a67c"/>
+            <ellipse cx="91" cy="112" rx="6" ry="9" fill="#e3b187"/>
+            <ellipse cx="149" cy="112" rx="6" ry="9" fill="#e3b187"/>
+            <ellipse cx="120" cy="110" rx="29" ry="33" fill="#eab98e"/>
+            <path class="lv1" d="M94 118 Q98 144 120 145 Q142 144 146 118 Q140 136 120 137 Q100 136 94 118Z" fill="#8a6a55" opacity=".22"/>
+            <g class="lv3">
+              <path d="M93 114 Q97 146 120 147 Q143 146 147 114 Q141 138 120 139 Q99 138 93 114Z" fill="#6b4f3d" opacity=".3"/>
+              <g fill="#6b4f3d" opacity=".6"><circle cx="104" cy="130" r=".9"/><circle cx="110" cy="134" r=".9"/><circle cx="118" cy="136" r=".9"/><circle cx="126" cy="135" r=".9"/><circle cx="133" cy="132" r=".9"/><circle cx="138" cy="127" r=".9"/><circle cx="100" cy="125" r=".9"/><circle cx="114" cy="139" r=".9"/><circle cx="130" cy="138" r=".9"/></g>
+            </g>
+            <path d="M92 90 l6 10 l2 -12 l6 9 l3 -10" fill="#4a3526"/>
+            <path class="lv3" d="M146 88 l6 8 l-1 -10 l5 6" fill="#4a3526"/>
+            <!-- глаза -->
+            <ellipse cx="108" cy="108" rx="7" ry="5" fill="#fff"/>
+            <ellipse cx="132" cy="108" rx="7" ry="5" fill="#fff"/>
+            <circle cx="108" cy="109" r="3" fill="#2d2d2d"/>
+            <circle cx="132" cy="109" r="3" fill="#2d2d2d"/>
+            <path class="lid" d="M100 108 a8 7 0 0 1 16 0 z" fill="#dcaa80"/>
+            <path class="lid" d="M124 108 a8 7 0 0 1 16 0 z" fill="#dcaa80"/>
+            <path class="lv1" d="M101 115 q7 5 14 0 M125 115 q7 5 14 0" stroke="#9c6c8f" stroke-width="1.6" fill="none" opacity=".6"/>
+            <path class="lv3" d="M100 117 q8 6 16 0 M124 117 q8 6 16 0 M101 121 q7 4 14 0 M125 121 q7 4 14 0" stroke="#7d4f76" stroke-width="2" fill="none" opacity=".7"/>
+            <ellipse class="lv4" cx="108" cy="116" rx="9" ry="6" fill="#7b4fa0" opacity=".4"/>
+            <path class="fresh" d="M101 97 q7 -5 14 -1 M125 96 q7 -4 14 1" stroke="#4a3526" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path class="lv1" d="M100 99 l14 3 M140 99 l-14 3" stroke="#4a3526" stroke-width="3" stroke-linecap="round"/>
+            <path d="M120 110 q-3 8 1 10" stroke="#c48a60" stroke-width="2" fill="none"/>
+            <path class="fresh" d="M110 126 q10 9 20 0 z" fill="#fff" stroke="#7a3a2a" stroke-width="2.4" stroke-linejoin="round"/>
+            <path class="lv1 mouth-sad" d="M111 130 q9 -5 18 0" stroke="#7a3a2a" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+            <ellipse class="lv2 mouth-yawn" cx="120" cy="130" rx="6" ry="8" fill="#5a1a1a"/>
+            <g class="lv3" transform="rotate(-20 140 124)">
+              <rect x="132" y="121" width="16" height="6" rx="2" fill="#f0d2a8" stroke="#cfa77a" stroke-width=".8"/>
+              <rect x="137" y="116" width="6" height="16" rx="2" fill="#f0d2a8" stroke="#cfa77a" stroke-width=".8"/>
+            </g>
+            <path class="sweat lv1" d="M147 96 q4 6 0 9 q-4 -3 0 -9z" fill="#8fd0ff"/>
+            <path class="sweat s2 lv1" d="M95 100 q4 6 0 9 q-4 -3 0 -9z" fill="#8fd0ff"/>
+            <g class="shades">
+              <ellipse cx="108" cy="108" rx="10" ry="7" fill="#111"/>
+              <ellipse cx="132" cy="108" rx="10" ry="7" fill="#111"/>
+              <path d="M118 107 h4" stroke="#111" stroke-width="3"/>
+              <path d="M102 105 l5 -2 M126 105 l5 -2" stroke="#fff" opacity=".6" stroke-width="2"/>
+            </g>
+            <!-- каска -->
+            <g class="helmet">
+              <path d="M86 94 Q84 56 120 54 Q156 56 154 94 Z" fill="#f7f7f7"/>
+              <path d="M118 55 h4 v39 h-4z" fill="#e2e2e2"/>
+              <rect x="80" y="91" width="80" height="7" rx="3.5" fill="#e6e6e6"/>
+              <rect x="88" y="80" width="64" height="6" fill="#0a7fd6"/>
+              <path d="M127 66 q5 5 1 10 q-1 3 -4 1 q2 -1 1 -3 q-2 2 -3 0 q0 -4 5 -8z" fill="#0a7fd6"/>
+              <g class="lv3" fill="#6b5a3e" opacity=".5"><ellipse cx="100" cy="72" rx="6" ry="3"/><ellipse cx="142" cy="84" rx="4" ry="2"/></g>
+              <path class="lv4" d="M104 58 l5 8 l-4 5 l7 6 l-3 6" stroke="#444" stroke-width="1.8" fill="none"/>
+            </g>
+            <g class="zzz lv2" font-weight="700">
+              <text x="156" y="72" font-size="16">z</text>
+              <text x="164" y="60" font-size="20">z</text>
+              <text x="172" y="46" font-size="24">Z</text>
+            </g>
+            <g class="lv4 fly-orbit"><g transform="translate(160 96)">
+              <ellipse class="wing" cx="-2" cy="-3" rx="3.4" ry="2" fill="#cfe8ff"/>
+              <ellipse class="wing" cx="2" cy="-3" rx="3.4" ry="2" fill="#cfe8ff"/>
+              <ellipse rx="3.2" ry="2.4" fill="#111"/>
+            </g></g>
+          </g>
+        </g>
+      </g></g>
+      <!-- 100%: батарейка -->
+      <g class="battery" transform="translate(58 240)">
+        <rect width="54" height="26" rx="4" fill="#111" stroke="#fff" stroke-width="3"/>
+        <rect x="54" y="8" width="6" height="10" rx="2" fill="#fff"/>
+        <rect class="lvl" x="4" y="4" width="8" height="18" rx="2" fill="#ff3b30"/>
+        <text x="27" y="46" text-anchor="middle" font-size="15" fill="#ff6b60" font-family="Russo One,sans-serif">0%</text>
+      </g>
+    </svg>
